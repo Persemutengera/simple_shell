@@ -1,4 +1,5 @@
 #include "main.h"
+#include "info.h"
 
 /**
  * hsh - main shell loop
