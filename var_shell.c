@@ -20,19 +20,20 @@ void check_env(r_var **h, char *in, data_shell *data)
 		{
 			if (_envr[row][chr] == '=')
 			{
-				lval = _strlen(_envr[row] + chr + 1);
-				add_rvar_node(h, j, _envr[row] + chr + 1, lval);
-				return;
-			}
-
-			if (in[j] == _envr[row][chr])
-				j++;
-			else
-				break;
+				char **args;
+	int status;
+	int counter;
+	char **_environ;
+	char *pid;;
 		}
 	}
 
-	for (j = 0; in[j]; j++)
+	char **args;
+	int status;
+	int counter;
+	char **_environ;
+	char *pid;
+  for (j = 0; in[j]; j++)
 	{
 		if (in[j] == ' ' || in[j] == '\t' || in[j] == ';' || in[j] == '\n')
 			break;
