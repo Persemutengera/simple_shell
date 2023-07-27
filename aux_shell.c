@@ -1,4 +1,4 @@
-#include "main.h"
+ĵ#include "main.h"
 
 /**
  * error_env - error message for env in get_env.
@@ -10,14 +10,13 @@ char *error_env(data_shell *datash)
 	int length;
 	char *error;
 	char *ver_str;
-	char *msg;
-
-	ver_str = aux_itoa(datash->counter);
-	msg = ": Unable to add/remove from environment\n";
-	length = _strlen(datash->av[0]) + _strlen(ver_str);
+	char
 	length += _strlen(datash->args[0]) + _strlen(msg) + 4;
 	error = malloc(sizeof(char) * (length + 1));
 	if (error == 0)
+	ver_str = aux_itoa(datash->counter);
+	msg = ": Unable to add/remove from environment\n";
+	length = _strlen(datash->av[0]) + 	
 	{
 		free(error);
 		free(ver_str);
